@@ -1,0 +1,74 @@
+#education {
+    padding: 50px;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #6c5ce7;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+}
+
+.timeline-content {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 40px;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item h3 {
+    font-size: 1.2rem;
+    color: #b2bec3;
+}
+
+.timeline-item h4 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.timeline-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #dfe6e9;
+}
+
+.timeline-item .description {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    color: #b2bec3;
+}
+
+@media (max-width: 768px) {
+    .timeline-content {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-dot {
+        position: static;
+        margin-bottom: 20px;
+    }
+}
